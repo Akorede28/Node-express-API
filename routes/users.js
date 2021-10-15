@@ -19,9 +19,9 @@ router.post("/", createUser);
 
 router.get("/:id", getUser);
 
-router.delete("/", deleteUser);
+router.delete("/:id", deleteUser);
 
-router.patch("/:d", updateUser);
+router.patch("/:id", updateUser);
 
 // we export default router so as to be able to use it in index.js
 export default router;
